@@ -341,20 +341,32 @@ html, body {
   flex-shrink: 0;
 }
 
-.card__venue {
-  font-size: 0.85rem;
-  letter-spacing: 0.12em;
-  color: var(--text-mid);
-  font-style: italic;
-  margin-bottom: 8px;
+.card__rsvp-btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 10px 36px;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--cream);
+  background: var(--wax);
+  border: none;
+  border-radius: 2px;
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(139,26,26,0.35);
+  transition: background 0.2s, box-shadow 0.2s, transform 0.15s;
 }
 
-.card__rsvp {
-  font-size: 0.72rem;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--deep-gold);
-  margin-top: 4px;
+.card__rsvp-btn:hover {
+  background: #a01515;
+  box-shadow: 0 5px 16px rgba(139,26,26,0.5);
+  transform: translateY(-1px);
+}
+
+.card__rsvp-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(139,26,26,0.3);
 }
 
 /* Card corner flowers */
